@@ -91,12 +91,14 @@ nav {
   align-items: flex-start;
 }
 
-.maps {
+#map-info {
+  display: none;
   background-color: #f3f5ed;
   border: 2px solid #000;
   border-radius: 15px;
   width: 50vh;
   min-width: 40vh;
+  height: fit-content;
   padding: 4vh;
   display: flex;
   flex-direction: column;
@@ -120,7 +122,8 @@ nav {
   }
 }
 
-.maps.active {
+#map-info.active {
+  display: flex;
   width: 80vh;
 }
 
@@ -145,20 +148,22 @@ nav {
   margin-bottom: 2vh;
 }
 .other-maps {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 4vh;
   margin-left: 5vh;
-  img {
-    border-radius: 15px;
-    width: 20vh;
-    height: 20vh;
-    object-fit: cover;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: border 0.2s;
-  }
-  img:hover {
-    border: 2px solid #0077ff;
+  .maps {
+    img {
+      border-radius: 15px;
+      width: 40vh;
+      height: 40vh;
+      object-fit: cover;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border 0.2s;
+    }
+    img:hover {
+      border: 2px solid #0077ff;
+    }
   }
 }
