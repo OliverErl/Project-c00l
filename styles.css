@@ -13,6 +13,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   img {
     height: 15vh;
     margin-left: 5vh;
@@ -124,7 +125,7 @@ nav {
 
 #map-info.active {
   display: flex;
-  width: 80vh;
+  width: 100vh;
 }
 
 .maps-content {
@@ -164,6 +165,142 @@ nav {
     }
     img:hover {
       border: 2px solid #0077ff;
+    }
+  }
+}
+
+#kontakt-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  #kontakt-info {
+    background-color: #f3f5ed;
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 100vh;
+    height: fit-content;
+    padding: 5vh;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    a:hover {
+      color: #0077ff;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    img {
+      height: 10vh;
+      margin: 2vh 0;
+    }
+    ul {
+      flex-direction: row;
+      li {
+        margin: 2vh 3vj;
+        a {
+          font-size: 3vh;
+        }
+      }
+    }
+  }
+
+  #home-content {
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 4vh;
+      margin: 3vh 0 2vh 0;
+      text-align: center;
+    }
+    img {
+      height: 40vh;
+      margin-bottom: 2vh;
+    }
+  }
+
+  #dino-content {
+    flex-direction: column;
+    padding: 2vh;
+    .dinos {
+      flex-direction: column;
+      width: 95vw;
+      margin-bottom: 3vh;
+      #dino {
+        img {
+          width: 90vw;
+          height: auto;
+          margin: 0 auto 2vh auto;
+        }
+        h2 {
+          font-size: 3vh;
+        }
+      }
+      p {
+        font-size: 2vh;
+        margin: 0 0 2vh 0;
+      }
+    }
+  }
+
+  #map-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 2vh;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #map-info,
+  #map-info.active {
+    width: 93vw;
+    min-width: unset;
+    padding: 2vh;
+    h2 {
+      font-size: 3vh;
+    }
+    img {
+      width: 40vw;
+      height: auto;
+      margin-bottom: 2vh;
+    }
+    p {
+      font-size: 2vh;
+    }
+  }
+
+  .maps-title,
+  .maps-subtitle {
+    font-size: 3vh;
+    text-align: center;
+  }
+  .maps-description {
+    font-size: 2vh;
+    text-align: center;
+  }
+  .other-maps {
+    flex-direction: column;
+    gap: 2vh;
+    margin-left: 0;
+    .maps {
+      img {
+        width: 90vw;
+        height: auto;
+      }
+    }
+  }
+
+  #kontakt-content {
+    margin-top: 2vh;
+    #kontakt-info {
+      width: 95vw;
+      padding: 2vh;
+      font-size: 2vh;
     }
   }
 }
