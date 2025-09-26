@@ -90,6 +90,7 @@ nav {
   gap: 5vh;
   padding: 5vh;
   align-items: flex-start;
+  justify-content: center;
 }
 
 #map-info {
@@ -231,7 +232,7 @@ nav {
       margin-bottom: 3vh;
       #dino {
         img {
-          width: 90vw;
+          width: 85vw;
           height: auto;
           margin: 0 auto 2vh auto;
         }
