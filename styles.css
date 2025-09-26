@@ -302,6 +302,9 @@ nav {
       width: 95vw;
       padding: 2vh;
       font-size: 2vh;
+      h2{
+        font-size: 2vh;
+      }
     }
   }
 }
